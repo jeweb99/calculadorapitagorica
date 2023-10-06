@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="calculadora.css" media="screen"/>
+    <title>Calculadora</title>
+</head>
+<body>
+    <button class="home"><a href="index.html">Home</button></a>
+
+    <h1>Calculadora Pitagórica</h1>
+    <div class="fundo">
+        <div class="calculadora">
+            <h2>Calculadora</h2>
+    <p id="resultado"></p>
+    <table>
+        
+            <tr>
+                <td><button class="botao" onclick="seno()">sen</button></td>
+                <td><button class="botao" onclick="cos()">cos</button></td>
+                <td><button class="botao" onclick="tangente()">tg</button></td>
+                <td><button class="botao" onclick="back">C</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="insert('1')">1</button></td>
+                <td><button class="botao" onclick="insert('2')">2</button></td>
+                <td><button class="botao" onclick="insert('3')">3</button></td>
+                <td><button class="botao" onclick="setCateto1()">CA1</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="insert('4')">4</button></td>
+                <td><button class="botao" onclick="insert('5')">1</button></td>
+                <td><button class="botao" onclick="insert('6')">1</button></td>
+                <td><button class="botao" onclick="setCateto2()">CA2</button></td>
+            </tr>
+            <tr>
+                <td><button class="botao" onclick="insert('7')">7</button></td>
+                <td><button class="botao" onclick="insert('8')">8</button></td>
+                <td><button class="botao" onclick="insert('9')">9</button></td>
+                <td><button class="botao" onclick="setHipotenusa()">HI</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button class="botao" style="width: 106px;" onclick="clearAll()">clear</button></td>
+                <td><button class="botao" onclick="insert('0')">0</button></td>
+                <td><button class="botao" onclick="insert('.')">.</button></td>
+            </tr>
+        </table>
+        </div>
+        </div>
+
+        <div class="areatriangulo">
+            <div class ="trianguloRetangulo"></div>
+		    <p id="hipotenusa">hipotenusa</p>
+		    <p id="cateto1" >cateto adj.</p>
+		    <p id="catetoOposto">cateto op.</p>
+            </div>
+            <div id="pitagoras">
+                <img src="https://cdn.pixabay.com/photo/2020/10/12/19/56/pythagoras-5649998_960_720.png" width="200px">
+            </div>
+
+</body>
+</html>
